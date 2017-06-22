@@ -2,24 +2,42 @@
 <html>
 
 <head>
-    <title>Portfolio Contact</title>
+    <title>Portfolio Index</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Add in any links to external JS and/or CSS files here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="clear">
-                <big><b>Michael Alley</b></big>
-                <a href="contact.html" id="contact"><b>Contact</b></a>
-                <a href="portfolio.html" id="portfolio"><b>Portfolio</b></a>
-                <a href="index.html" id="About"><b>About</b></a>
-            </div>
-        </header>
-        <div class="clear">
-            <section id="main">
-                <h1><b>Contact</b></h1>
-                <div class="clear">
+<body class="Site">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <p class="navbar-brand" href="#"><big>Michael Alley</big></p>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="contact.html" class="links" id="contact">
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="portfolio.html" class="links" id="portfolio">
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Portfolio</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="links" id="About">
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="Site-content">
+            <div class="row">
+                <div class="col-md-9" id="main">
+                    <h1><b>Contact</b></h1>
                     <form action="/action_page.php" class="contactform">
                         <label for="name">Name
                         </label>
@@ -43,24 +61,29 @@
                         <input type="submit" value="Submit">
                     </form>
                 </div>
-            </section>
-            <section id="connect">
-                <h2><b>Connect with Me</b></h2>
-                <div class='clear'>
-                    <!-- 3 icons github, linkedIn,StackOverflow with links-->
-                    <a href="https://github.com/malley73">
-                        <img src='./assets/images/github.png' alt="github" id="github" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/michael-alley-a0324047/">
-                        <img src='./assets/images/linkedIn.png' alt="LinkedIn" id="linkedIn" />
-                    </a>
-                    <a href="https://stackexchange.com/users/11053587/mike-a">
-                        <img src='./assets/images/stackoverflow.png' alt="stackoverflow" id="stackoverflow" />
-                    </a>
+            </div>
+            <div class="col-md-3" id="connect">
+                <h2>Connect with Me</h2>
+                <!-- 3 icons github, linkedIn,StackOverflow with links-->
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a href="https://github.com/malley73" class="thumbnail">
+                            <img src='./assets/images/github.png' alt="github" id="github" />
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://www.linkedin.com/in/michael-alley-a0324047/" class="thumbnail">
+                            <img src='./assets/images/linkedIn.png' alt="LinkedIn" id="linkedIn" />
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://stackexchange.com/users/11053587/mike-a" class="thumbnail">
+                            <img src='./assets/images/stackoverflow.png' alt="stackoverflow" id="stackoverflow" />
+                        </a>
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
-        <div class="push"></div>
     </div>
     <footer class="footer">
         <p id="copyright">&copy;Copyright 2017 Michael Alley</p>

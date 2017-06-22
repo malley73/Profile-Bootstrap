@@ -1,10 +1,20 @@
 body {
     background-image: url('../images/texturetastic_gray.png');
 }
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
 
 .navbar {
     border-bottom: solid 2px #dddddd;
     background-color: white;
+    margin-bottom: 20px;
    
 }
 
@@ -13,13 +23,15 @@ big {
     font-size: 32px;
     color: white;
     padding: 20px;
-   
     background-color: #4aaaa5;
 }
 
-h1 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
+h1{
     font-size: 32px;
+}
+
+h1, h2 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
     border-bottom: solid 2px #dddddd;
     color: #4aaaa5;
 }
@@ -29,29 +41,27 @@ h1 {
     color: #777777;
     background-color: white;
     border: solid 2px #dddddd;
+ 
 }
 
 #profile-pic {
-    display: block;
-    max-width: 250px;
-    max-height: 250px;
-    width: auto;
-    height: auto;
+    padding: 5px;
 }
 
 #connect {
+
     text-align: center;
     background-color: white;
     color: #4aaaa5;
     border-top: solid 2px #dddddd;
+    padding-bottom: 20px;
 }
 
 /*This is the end of index format*/
 
 .contactform {
     margin: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
+
     color: #777777;
     font-size: 18px;
     padding: 0px;
@@ -72,10 +82,8 @@ input[type=submit] {
     border: 1px solid #4aaaa5;
 }
 
-input[type="submit"]:hover {
-    border: 1px solid #999;
-    color: #000;
-}
+
+
 
 .samples {
  
@@ -122,6 +130,7 @@ input[type="submit"]:hover {
     background-color: #666666;
     text-align: center;
     border-top: solid 10px #4aaaa5;
+
 }
 
 #copyright {

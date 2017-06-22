@@ -2,20 +2,37 @@
 <html>
 
 <head>
-    <title>Portfolio</title>
+    <title>Portfolio Index</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Add in any links to external JS and/or CSS files here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="clear">
-                <big><b>Michael Alley</b></big>
-                <a href="contact.html" id="contact"><b>Contact</b></a>
-                <a href="portfolio.html" id="portfolio"><b>Portfolio</b></a>
-                <a href="index.html" id="About"><b>About</b></a>
-            </div>
-        </header>
+<body class="Site">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <p class="navbar-brand" href="#"><big>Michael Alley</big></p>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="contact.html" class="links" id="contact">
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="portfolio.html" class="links" id="portfolio">
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Portfolio</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="links" id="About">
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
         <div class="clear">
             <section id="main">
                 <h1><b>Portfolio</b></h1>
